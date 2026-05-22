@@ -300,11 +300,11 @@ check_systype() {
 		systype=Padavan #老毛子固件
 		initdir='/etc/storage/started_script.sh'
 	}
-	[ -d "/jffs" ] && {
-		systype=asusrouter #华硕固件
-		[ -f "/jffs/.asusrouter" ] && initdir='/jffs/.asusrouter'
-		[ -d "/jffs/scripts" ] && initdir='/jffs/scripts/nat-start'
-	}
+	#[ -d "/jffs" ] && {
+	#	systype=asusrouter #华硕固件
+	#	[ -f "/jffs/.asusrouter" ] && initdir='/jffs/.asusrouter'
+	#	[ -d "/jffs/scripts" ] && initdir='/jffs/scripts/nat-start'
+	#}
 	[ -f "/data/etc/crontabs/root" ] && systype=mi_snapshot #小米设备
 	[ -w "/var/mnt/cfg/firewall" ] && systype=ng_snapshot   #NETGEAR设备
 }
