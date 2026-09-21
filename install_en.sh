@@ -300,12 +300,12 @@ check_systype() {
 		systype=Padavan # Padavan Firmware
 		initdir='/etc/storage/started_script.sh'
 	}
+    [ -f "/data/etc/crontabs/root" ] && systype=mi_snapshot # Xiaomi device
 	[ -d "/jffs" ] && {
 		systype=asusrouter # Asus Firmware
 		[ -f "/jffs/.asusrouter" ] && initdir='/jffs/.asusrouter'
 		[ -d "/jffs/scripts" ] && initdir='/jffs/scripts/nat-start'
 	}
-	[ -f "/data/etc/crontabs/root" ] && systype=mi_snapshot # Xiaomi device
 	[ -w "/var/mnt/cfg/firewall" ] && systype=ng_snapshot   # NETGEAR device
 }
 check_user() {
