@@ -75,8 +75,8 @@ export url='https://gh.jwsc.eu.org/dev' && bash -c "$(curl -kfsSl $url/install_e
 **Installation via `curl`:**
 > GitHub Source (Recommended for overseas environments or environments with proxy access)
 ```sh
-export url='https://raw.githubusercontent.com/juewuy/ShellCrash/dev' \
-  && sh -c "$(curl -kfsSl $url/install_en.sh)" \
+export url='https://raw.githubusercontent.com/fyzhu/ShellCrash/dev' \
+  && sh -c "$(curl -kfsSl $url/install.sh)" \
   && . /etc/profile &> /dev/null
 ```
 
